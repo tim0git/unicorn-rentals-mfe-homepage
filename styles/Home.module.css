@@ -43,16 +43,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
-}
-
-.title,
-.description {
   text-align: center;
-}
-
-.rainbow_text_animated {
-  text-align: center;
-  font-size: 4rem;
   background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
   -webkit-background-clip: text;
   color: transparent;
@@ -60,19 +51,16 @@
   background-size: 400% 100%;
 }
 
-@keyframes rainbow_animation {
-  0%,100% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 100% 0;
-  }
+.title,
+.description {
+  text-align: center;
 }
 
 .description {
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  max-width: 800px;
 }
 
 .code {
@@ -145,5 +133,14 @@
   }
   .logo img {
     filter: invert(1);
+  }
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
   }
 }

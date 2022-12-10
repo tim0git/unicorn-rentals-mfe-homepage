@@ -12,7 +12,7 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <h1 className={styles.rainbow_text_animated}>Welcome to Unicorn rentals</h1>
+                <h1 className={styles.title}>Welcome to Unicorn rentals</h1>
                 <Image src="/unicorn-rentals.svg" alt="Unicorn Rental Logo" width={250} height={250} />
 
                 <div className={styles.container}>
