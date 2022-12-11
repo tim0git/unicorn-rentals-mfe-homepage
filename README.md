@@ -1,4 +1,4 @@
-# unicorn rentals mfe homepage
+# unicorn-rentals-mfe-homepage
 
 ## Getting Started
 To get you started you can simply clone the `unicorn-rentals-mfe-homepage` repository and install the dependencies:
@@ -15,19 +15,26 @@ Clone the `unicorn-rentals-mfe-homepage` repository using git:
 
 ```bash
 git clone https://github.com/tim0git/unicorn-rentals-mfe-homepage.git
+cd unicorn-rentals-mfe-homepage
 ```
 
 If you just want to start a new project without the `unicorn-rentals-mfe-homepage` commit history then you can do:
 
 ```bash
 git clone --depth=1 https://github.com/tim0git/unicorn-rentals-mfe-homepage.git
+cd unicorn-rentals-mfe-homepage
 ```
 *The `depth=1` tells git to only pull down one commit worth of historical data.*
+
+Those who use nvm (node version manager) can use the following command to install the correct version of Node.js and npm:
+
+```bash
+nvm install
+```
 
 ### Install Dependencies
 
 ```bash
-cd unicorn-rentals-mfe-homepage
 npm install
 ```
 
@@ -42,5 +49,27 @@ Now browse to the app at `http://localhost:3000`.
 ## Directory Layout
 
 ``` bash
+├── Dockerfile
+├── README.md
+├── next-env.d.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── pages
+│   ├── _app.tsx
+│   ├── api
+│   │  └── health.ts
+│   └── index.tsx
+├── public
+│   ├── amazon-web-services-logo.svg
+│   ├── favicon.ico
+│   └── unicorn-rentals.svg
+├── styles
+│   ├── Home.module.css
+│   └── globals.css
+└── tsconfig.json
 ```
+
+
+
 
